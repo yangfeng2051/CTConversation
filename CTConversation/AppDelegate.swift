@@ -7,15 +7,81 @@
 //
 
 import UIKit
-
+import XMPPFramework
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,XMPPStreamDelegate {
 
     var window: UIWindow?
+    
+    
+    
+    var xmppStream :XMPPStream?
+    
+    func setUpXMPPStream() {
+        xmppStream = XMPPStream()
+        xmppStream!.addDelegate(self, delegateQueue:DispatchQueue.global())
+    }
+    
+    func connectToHost(){
+        
+        self.setUpXMPPStream()
+        if let stream = xmppStream {
+            let myJID = XMPPJID(user:"y000001",domain:"192.168.31.54",resource:"ipnone")
+            stream.myJID = myJID
+            stream.hostName = "192.168.31.54"
+            stream.hostPort = 5222
+            
+            do {
+                try stream.connect(withTimeout: XMPPStreamTimeoutNone)
+            } catch let error as NSError {
+                print(error)
+            }
+        } else {
+            self.setUpXMPPStream()
+        }
+        
 
 
+    }
+    func sendPassWordToHost() {
+        do {
+            try xmppStream!.authenticate(withPassword: "123456")
+        } catch let error as NSError {
+            print(error)
+        }
+    }
+    func sendOnlineToHost() {
+        xmppStream!.send(XMPPPresence())
+        print(XMPPPresence())
+    }
+    
+    
+    // MARK: XMPPStreamDelegate
+    func xmppStreamDidConnect(_ sender: XMPPStream!) {
+        print("链接成功")
+        self.sendPassWordToHost()
+    }
+    func xmppStreamDidDisconnect(_ sender: XMPPStream!, withError error: Error!) {
+        print("链接断开失败\(error)")
+    }
+    
+    
+    func xmppStreamDidAuthenticate(_ sender: XMPPStream!) {
+        print("登录成功")
+        self.sendOnlineToHost()
+    }
+    func xmppStream(_ sender: XMPPStream!, didNotAuthenticate error: DDXMLElement!) {
+        print(error);
+    }
+    func logout() {
+        xmppStream!.send(XMPPPresence(name: "unavailable"))
+        print(XMPPPresence(name: "unavailable"))
+        xmppStream!.disconnect()
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.connectToHost()
         return true
     }
 
