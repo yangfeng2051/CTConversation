@@ -8,6 +8,7 @@ target 'CTConversation' do
   #Swift
     pod 'Moya'
     pod 'SwiftyJSON'
+    pod 'SnapKit'
   #Object-C
     pod 'XMPPFramework'
 

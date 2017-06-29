@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		042BE17B1E30F5BC00B16F7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BE17A1E30F5BC00B16F7A /* AppDelegate.swift */; };
 		042BE17D1E30F5BC00B16F7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BE17C1E30F5BC00B16F7A /* ViewController.swift */; };
-		042BE1801E30F5BC00B16F7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042BE17E1E30F5BC00B16F7A /* Main.storyboard */; };
 		042BE1821E30F5BC00B16F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042BE1811E30F5BC00B16F7A /* Assets.xcassets */; };
-		042BE1851E30F5BC00B16F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042BE1831E30F5BC00B16F7A /* LaunchScreen.storyboard */; };
 		042BE1901E30F5BC00B16F7A /* CTConversationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BE18F1E30F5BC00B16F7A /* CTConversationTests.swift */; };
 		042BE19B1E30F5BC00B16F7A /* CTConversationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042BE19A1E30F5BC00B16F7A /* CTConversationUITests.swift */; };
+		04CD5A821EFFD38000BDC6EA /* Emotion.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04CD5A7B1EFFD38000BDC6EA /* Emotion.bundle */; };
+		04CD5A831EFFD38000BDC6EA /* Emotions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04CD5A7C1EFFD38000BDC6EA /* Emotions.plist */; };
+		04CD5A841EFFD38000BDC6EA /* imageDownloadFail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CD5A7D1EFFD38000BDC6EA /* imageDownloadFail@2x.png */; };
+		04CD5A851EFFD38000BDC6EA /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CD5A7E1EFFD38000BDC6EA /* Media.xcassets */; };
+		04CD5A861EFFD38000BDC6EA /* Monaco.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04CD5A7F1EFFD38000BDC6EA /* Monaco.ttf */; };
+		04CD5A871EFFD38000BDC6EA /* user@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CD5A801EFFD38000BDC6EA /* user@2x.png */; };
 		F1E963A1C80D12A5383CFE46 /* Pods_CTConversation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74FB342B10091A2F3F9ACDC /* Pods_CTConversation.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,9 +42,7 @@
 		042BE1771E30F5BC00B16F7A /* CTConversation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTConversation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		042BE17A1E30F5BC00B16F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		042BE17C1E30F5BC00B16F7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		042BE17F1E30F5BC00B16F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		042BE1811E30F5BC00B16F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		042BE1841E30F5BC00B16F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		042BE1811E30F5BC00B16F7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		042BE1861E30F5BC00B16F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		042BE18B1E30F5BC00B16F7A /* CTConversationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTConversationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		042BE18F1E30F5BC00B16F7A /* CTConversationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTConversationTests.swift; sourceTree = "<group>"; };
@@ -48,6 +50,12 @@
 		042BE1961E30F5BC00B16F7A /* CTConversationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTConversationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		042BE19A1E30F5BC00B16F7A /* CTConversationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CTConversationUITests.swift; sourceTree = "<group>"; };
 		042BE19C1E30F5BC00B16F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CD5A7B1EFFD38000BDC6EA /* Emotion.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emotion.bundle; sourceTree = "<group>"; };
+		04CD5A7C1EFFD38000BDC6EA /* Emotions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Emotions.plist; sourceTree = "<group>"; };
+		04CD5A7D1EFFD38000BDC6EA /* imageDownloadFail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imageDownloadFail@2x.png"; sourceTree = "<group>"; };
+		04CD5A7E1EFFD38000BDC6EA /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		04CD5A7F1EFFD38000BDC6EA /* Monaco.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Monaco.ttf; sourceTree = "<group>"; };
+		04CD5A801EFFD38000BDC6EA /* user@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user@2x.png"; sourceTree = "<group>"; };
 		26033C71EEC699BFE58FEBBD /* Pods-CTConversation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTConversation.release.xcconfig"; path = "Pods/Target Support Files/Pods-CTConversation/Pods-CTConversation.release.xcconfig"; sourceTree = "<group>"; };
 		59877AD6251A95EC158090F3 /* Pods-CTConversation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTConversation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CTConversation/Pods-CTConversation.debug.xcconfig"; sourceTree = "<group>"; };
 		D74FB342B10091A2F3F9ACDC /* Pods_CTConversation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CTConversation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,10 +114,8 @@
 			children = (
 				042BE17A1E30F5BC00B16F7A /* AppDelegate.swift */,
 				042BE17C1E30F5BC00B16F7A /* ViewController.swift */,
-				042BE17E1E30F5BC00B16F7A /* Main.storyboard */,
-				042BE1811E30F5BC00B16F7A /* Assets.xcassets */,
-				042BE1831E30F5BC00B16F7A /* LaunchScreen.storyboard */,
 				042BE1861E30F5BC00B16F7A /* Info.plist */,
+				04CD5A791EFFD35E00BDC6EA /* Resources */,
 			);
 			path = CTConversation;
 			sourceTree = "<group>";
@@ -130,6 +136,20 @@
 				042BE19C1E30F5BC00B16F7A /* Info.plist */,
 			);
 			path = CTConversationUITests;
+			sourceTree = "<group>";
+		};
+		04CD5A791EFFD35E00BDC6EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				042BE1811E30F5BC00B16F7A /* Assets.xcassets */,
+				04CD5A7E1EFFD38000BDC6EA /* Media.xcassets */,
+				04CD5A7B1EFFD38000BDC6EA /* Emotion.bundle */,
+				04CD5A7C1EFFD38000BDC6EA /* Emotions.plist */,
+				04CD5A7D1EFFD38000BDC6EA /* imageDownloadFail@2x.png */,
+				04CD5A7F1EFFD38000BDC6EA /* Monaco.ttf */,
+				04CD5A801EFFD38000BDC6EA /* user@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		1DE0E332033B6CF3F73AD806 /* Pods */ = {
@@ -260,9 +280,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				042BE1851E30F5BC00B16F7A /* LaunchScreen.storyboard in Resources */,
+				04CD5A831EFFD38000BDC6EA /* Emotions.plist in Resources */,
+				04CD5A861EFFD38000BDC6EA /* Monaco.ttf in Resources */,
+				04CD5A851EFFD38000BDC6EA /* Media.xcassets in Resources */,
 				042BE1821E30F5BC00B16F7A /* Assets.xcassets in Resources */,
-				042BE1801E30F5BC00B16F7A /* Main.storyboard in Resources */,
+				04CD5A841EFFD38000BDC6EA /* imageDownloadFail@2x.png in Resources */,
+				04CD5A871EFFD38000BDC6EA /* user@2x.png in Resources */,
+				04CD5A821EFFD38000BDC6EA /* Emotion.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,25 +395,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		042BE17E1E30F5BC00B16F7A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				042BE17F1E30F5BC00B16F7A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		042BE1831E30F5BC00B16F7A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				042BE1841E30F5BC00B16F7A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		042BE19D1E30F5BC00B16F7A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -489,6 +494,7 @@
 			baseConfigurationReference = 59877AD6251A95EC158090F3 /* Pods-CTConversation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = HCZZ85A7CG;
 				INFOPLIST_FILE = CTConversation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -503,6 +509,7 @@
 			baseConfigurationReference = 26033C71EEC699BFE58FEBBD /* Pods-CTConversation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = HCZZ85A7CG;
 				INFOPLIST_FILE = CTConversation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -585,6 +592,7 @@
 				042BE1A11E30F5BC00B16F7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		042BE1A21E30F5BC00B16F7A /* Build configuration list for PBXNativeTarget "CTConversationTests" */ = {
 			isa = XCConfigurationList;
@@ -593,6 +601,7 @@
 				042BE1A41E30F5BC00B16F7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		042BE1A51E30F5BC00B16F7A /* Build configuration list for PBXNativeTarget "CTConversationUITests" */ = {
 			isa = XCConfigurationList;
@@ -601,6 +610,7 @@
 				042BE1A71E30F5BC00B16F7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
